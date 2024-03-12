@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
             );
             //System.exit(0);
         }
+        // Đổi attemp qua string sau đó hiển thị lên app
         String StrAttemps = String.valueOf(newAttemps);
         Attemps.setText(StrAttemps);
     }
