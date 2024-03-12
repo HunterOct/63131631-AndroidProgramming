@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
                             finishAffinity(); // Đóng tất cả các activity và thoát ứng dụng
                         }
                     },
-                    3000 // Thời gian chờ trước khi thoát (đơn vị: milliseconds)
+                    5000 // Thời gian chờ trước khi thoát (đơn vị: milliseconds)
             );
             //System.exit(0);
         }
