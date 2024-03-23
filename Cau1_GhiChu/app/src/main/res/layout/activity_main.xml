@@ -4,15 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#252525"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:fontFamily="@font/nunito_semibold"
+        android:text="Notes"
+        android:textColor="@color/white"
+        android:textSize="43dp"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="37dp" />
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+
+        tools:layout_editor_absoluteX="276dp"
+        tools:layout_editor_absoluteY="645dp"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>
