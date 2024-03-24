@@ -49,6 +49,21 @@ public class frBMI extends JFrame {
 		lblNewLabel_1.setFont(new Font("Tahoma", Font.PLAIN, 25));
 		lblNewLabel_1.setBounds(10, 134, 176, 38);
 		contentPane.add(lblNewLabel_1);
+		JLabel lblNewLabel_1_1 = new JLabel("Cân Nặng (Kg):");
+		lblNewLabel_1_1.setFont(new Font("Tahoma", Font.PLAIN, 25));
+		lblNewLabel_1_1.setBounds(10, 192, 176, 38);
+		contentPane.add(lblNewLabel_1_1);
+		
+		JLabel lblNewLabel_1_2 = new JLabel("Chỉ Số BMI Của Bạn:");
+		lblNewLabel_1_2.setFont(new Font("Tahoma", Font.BOLD, 25));
+		lblNewLabel_1_2.setBounds(25, 311, 272, 38);
+		contentPane.add(lblNewLabel_1_2);
+		
+		txt_height = new JTextField();
+		txt_height.setFont(new Font("Tahoma", Font.PLAIN, 25));
+		txt_height.setBounds(196, 137, 272, 33);
+		contentPane.add(txt_height);
+		txt_height.setColumns(10);
 	}
 
 }
