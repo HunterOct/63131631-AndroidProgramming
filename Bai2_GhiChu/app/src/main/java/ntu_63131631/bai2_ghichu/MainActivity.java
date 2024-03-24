@@ -74,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
                                 String title = Objects.requireNonNull(editTextTitle.getText()).toString();
                                 String notes = Objects.requireNonNull(editTextNotes.getText()).toString();
                                 dsNote.add(title + "\n" + notes);
+                                nguonDuLieu.notifyDataSetChanged(); // Thông báo cho adapter rằng dữ liệu đã thay đổi
                                 dialogInterface.dismiss();
                             }
                         }).setNegativeButton("Huỷ Bỏ", new DialogInterface.OnClickListener() {
