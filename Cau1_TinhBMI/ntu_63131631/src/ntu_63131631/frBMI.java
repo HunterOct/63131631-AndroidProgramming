@@ -1,6 +1,4 @@
 package ntu_63131631;
-
-
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
@@ -13,15 +11,12 @@ import javax.swing.JTextField;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-
 public class frBMI extends JFrame {
-
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	private JTextField txt_height;
 	private JTextField txt_weight;
 	private JTextField txt_bmi;
-
 
 	public frBMI() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
