@@ -4,11 +4,12 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class NoteAdapter {
+public class NoteAdapter extends ArrayAdapter<String> {
     public NoteAdapter(Context context, ArrayList<String> notes) {
         super(context, 0, notes);
     }
@@ -33,4 +34,3 @@ public class NoteAdapter {
 
         return convertView;
     }
-}
