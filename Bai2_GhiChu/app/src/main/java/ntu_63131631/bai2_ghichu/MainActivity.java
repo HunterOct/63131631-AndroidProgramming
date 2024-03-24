@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     String text ="";
     RecyclerView rc_Notes;
     ListView lv_Notes;
+    ExtendedFloatingActionButton btnNote;
     // Luu trữ Danh Sách note
     ArrayList<String> dsNote;
     NotesAdapter nguonDuLieu;
