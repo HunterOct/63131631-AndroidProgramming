@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         dsten.add("Hạnh");
         dsten.add("Phương Anh");
         // Tạo adapter và gắn vào nguồn dữ liệu
-        nguonDuLieu= new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,dsten);
+        nguonDuLieu = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,dsten);
         // Gắn bộ nguồn vào list
         lvten.setAdapter(nguonDuLieu);
     }

@@ -41,6 +41,7 @@
 
 
     </EditText>
+
     <ListView
         android:id="@+id/lvTen"
         android:layout_width="match_parent"
