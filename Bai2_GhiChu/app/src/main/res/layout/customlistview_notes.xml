@@ -5,25 +5,26 @@
     android:layout_height="wrap_content"
     android:layout_margin="16dp"
     app:cardCornerRadius="16dp"
-    app:cardElevation="8dp">
+    app:cardElevation="10dp"
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         >
-        <TextView
-            android:id="@+id/textview_title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:maxLines="10"
-            android:paddingHorizontal="8dp"
-            android:paddingVertical="4dp"
-            android:text=""
-            android:hint="Tiêu Đề"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            android:textStyle="normal" />
+<!--        <TextView-->
+<!--            android:id="@+id/textview_title"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:maxLines="10"-->
+<!--            android:paddingHorizontal="8dp"-->
+<!--            android:paddingVertical="4dp"-->
+<!--            android:text=""-->
+<!--            android:hint="Tiêu Đề"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textStyle="normal" />-->
         <TextView
             android:id="@+id/textview_notes"
             android:layout_width="match_parent"
@@ -33,9 +34,12 @@
             android:paddingVertical="4dp"
             android:text=""
             android:hint="Notes"
+            android:background="#F1C40F"
+            android:fontFamily="@font/nunito_semibold"
             android:textColor="@color/black"
-            android:textSize="20sp"
-            android:textStyle="normal" />
+            android:textSize="17sp"
+            android:textStyle="normal"
+            />
 
     </LinearLayout>
 

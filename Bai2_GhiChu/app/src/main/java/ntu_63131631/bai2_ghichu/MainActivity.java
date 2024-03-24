@@ -23,14 +23,11 @@ import java.util.ArrayList;
 import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
-    String text ="";
-    RecyclerView rc_Notes;
     ListView lv_Notes;
     ExtendedFloatingActionButton btnNote;
     // Luu trữ Danh Sách note
     ArrayList<String> dsNote;
     NotesAdapter nguonDuLieu;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,19 +39,11 @@ public class MainActivity extends AppCompatActivity {
         }
         setContentView(R.layout.activity_main);
 
-
         // Lấy ID
         btnNote = findViewById(R.id.btn_add_note);
-        //rc_Notes = (RecyclerView) findViewById(R.id.recycler_view_notes);
         lv_Notes = (ListView) findViewById(R.id.list_view_notes);
-        //TextView tvNote = findViewById(R.id.textview_notes);
-
-
         dsNote = new ArrayList<String>();
-        dsNote.add("Tường");
-        dsNote.add("Hạnh");
-        dsNote.add("Phương Anh");
-
+        //custom adapter
         nguonDuLieu = new NotesAdapter(this,dsNote);
         lv_Notes.setAdapter(nguonDuLieu);
 
@@ -62,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 View view1 = LayoutInflater.from(MainActivity.this).inflate(R.layout.dialog_layout, null);
+                // lấy dữ liệu từ dialog
                 TextInputEditText editTextTitle = view1.findViewById(R.id.edit_text_title);
                 TextInputEditText editTextNotes = view1.findViewById(R.id.edit_text_notes);
                 AlertDialog alertDialog = new MaterialAlertDialogBuilder(MainActivity.this)
@@ -70,10 +60,13 @@ public class MainActivity extends AppCompatActivity {
                         .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {
-                                // Hiên thị ghi chú
+                                //Nhập và lưu ghi chú
                                 String title = Objects.requireNonNull(editTextTitle.getText()).toString();
                                 String notes = Objects.requireNonNull(editTextNotes.getText()).toString();
                                 dsNote.add(title + "\n" + notes);
+                                if (!dsNote.isEmpty()) {
+                                    findViewById(R.id.cs_background).setVisibility(View.GONE);
+                                }
                                 nguonDuLieu.notifyDataSetChanged(); // Thông báo cho adapter rằng dữ liệu đã thay đổi
                                 dialogInterface.dismiss();
                             }
