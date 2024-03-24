@@ -98,5 +98,24 @@ public class frBMI extends JFrame {
 		btn_exit.setBounds(352, 240, 116, 43);
 		contentPane.add(btn_exit);
 	}
+	void TinhBMi() {
+		float flbmi ;
+		float flweight = Float.parseFloat(txt_weight.getText());
+		float flheight = Float.parseFloat(txt_height.getText());
+		flbmi = flweight /( flheight * flheight);
+	    txt_bmi.setText(Float.toString(flbmi));
+    	JOptionPane hopthoai = new JOptionPane();
+	    if (flbmi < 18) {
+			hopthoai.showMessageDialog(this, "Bạn là người gầy!");
+	    } else if (flbmi <= 24.9) {
+			hopthoai.showMessageDialog(this, "Bạn là người bình thường");
+	    } else if (flbmi <= 29.9) {
+			hopthoai.showMessageDialog(this, "Bạn bị béo phì độ I");
+	    } else if (flbmi <= 34.9) {
+			hopthoai.showMessageDialog(this, "Bạn bị béo phì độ II");
+	    } else {
+			hopthoai.showMessageDialog(this, "Bạn bị béo phì độ III");
+	    }
+	}
 
 }
