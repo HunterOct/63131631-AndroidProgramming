@@ -9,7 +9,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class NoteAdapter {
-    public NotesAdapter(Context context, ArrayList<String> notes) {
+    public NoteAdapter(Context context, ArrayList<String> notes) {
         super(context, 0, notes);
     }
 

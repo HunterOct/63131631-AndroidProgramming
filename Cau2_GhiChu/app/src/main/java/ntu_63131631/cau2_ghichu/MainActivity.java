@@ -5,14 +5,17 @@ import android.widget.ListView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+
+import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton;
 
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-
+    ListView lv_Notes;
+    ExtendedFloatingActionButton btnNote;
+    // Luu trữ Danh Sách note
+    ArrayList<String> dsNote;
+    NoteAdapter nguonDuLieu;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         lv_Notes = (ListView) findViewById(R.id.list_view_notes);
         dsNote = new ArrayList<String>();
         //custom adapter
-        nguonDuLieu = new NotesAdapter(this,dsNote);
+        nguonDuLieu = new NoteAdapter(this,dsNote);
         lv_Notes.setAdapter(nguonDuLieu);
     }
 }
