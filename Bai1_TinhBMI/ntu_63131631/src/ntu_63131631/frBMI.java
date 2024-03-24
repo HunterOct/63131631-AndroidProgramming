@@ -1,7 +1,5 @@
 package ntu_63131631;
 
-import java.awt.BorderLayout;
-import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -10,13 +8,10 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.SwingConstants;
 import java.awt.Font;
-import java.awt.SystemColor;
 import java.awt.Color;
 import javax.swing.JTextField;
-import javax.swing.JTextPane;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
-import java.util.Scanner;
 import java.awt.event.ActionEvent;
 
 public class frBMI extends JFrame {
