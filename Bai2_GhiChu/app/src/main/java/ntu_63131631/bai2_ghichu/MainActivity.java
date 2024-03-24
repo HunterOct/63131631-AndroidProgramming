@@ -54,40 +54,7 @@ public class MainActivity extends AppCompatActivity {
         dsNote.add("Tường");
         dsNote.add("Hạnh");
         dsNote.add("Phương Anh");
-        dsNote.add("Tường");
-        dsNote.add("Hạnh");
-        dsNote.add("Phương Anh");
-        dsNote.add("Tường");
-        dsNote.add("Hạnh");
-        dsNote.add("Phương Anh");
-        dsNote.add("Tường");
-        dsNote.add("Hạnh");
-        dsNote.add("Phương Anh");
 
-        dsNote.add("Tường");
-        dsNote.add("Hạnh");
-        dsNote.add("Phương Anh");
-        dsNote.add("Tường");
-        dsNote.add("Hạnh");
-        dsNote.add("Phương Anh");
-        dsNote.add("Tường");
-        dsNote.add("Hạnh");
-        dsNote.add("Phương Anh");
-        dsNote.add("Tường");
-        dsNote.add("Hạnh");
-        dsNote.add("Phương Anh");
-        dsNote.add("Tường");
-        dsNote.add("Hạnh");
-        dsNote.add("Phương Anh");
-        dsNote.add("Tường");
-        dsNote.add("Hạnh");
-        dsNote.add("Phương Anh");
-        dsNote.add("Tường");
-        dsNote.add("Hạnh");
-        dsNote.add("Phương Anh");
-        dsNote.add("Tường");
-        dsNote.add("Hạnh");
-        dsNote.add("Phương Anh");
         nguonDuLieu = new NotesAdapter(this,dsNote);
         lv_Notes.setAdapter(nguonDuLieu);
 
@@ -95,7 +62,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 View view1 = LayoutInflater.from(MainActivity.this).inflate(R.layout.dialog_layout, null);
-                TextInputEditText editText = view1.findViewById(R.id.edit_text_notes);
+                TextInputEditText editTextTitle = view1.findViewById(R.id.edit_text_title);
+                TextInputEditText editTextNotes = view1.findViewById(R.id.edit_text_notes);
                 AlertDialog alertDialog = new MaterialAlertDialogBuilder(MainActivity.this)
                         .setTitle("Ghi Chú Mới")
                         .setView(view1)
@@ -103,7 +71,9 @@ public class MainActivity extends AppCompatActivity {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {
                                 // Hiên thị ghi chú
-                                dsNote.add(MessageFormat.format("{0}" , Objects.requireNonNull(editText.getText())));
+                                String title = Objects.requireNonNull(editTextTitle.getText()).toString();
+                                String notes = Objects.requireNonNull(editTextNotes.getText()).toString();
+                                dsNote.add(title + "\n" + notes);
                                 dialogInterface.dismiss();
                             }
                         }).setNegativeButton("Huỷ Bỏ", new DialogInterface.OnClickListener() {

@@ -16,12 +16,12 @@ public class NotesAdapter extends ArrayAdapter<String> {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        // Get the data item for this position
+        // Lấy dữ liệu
         String note = getItem(position);
 
         // Check if an existing view is being reused, otherwise inflate the view
         if (convertView == null) {
-            convertView = LayoutInflater.from(getContext()).inflate(R.layout.recycleview_notes, parent, false);
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.customlistview_notes, parent, false);
         }
 
         // Lookup view for data population

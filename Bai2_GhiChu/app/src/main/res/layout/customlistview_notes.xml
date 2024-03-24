@@ -20,7 +20,7 @@
             android:paddingHorizontal="8dp"
             android:paddingVertical="4dp"
             android:text=""
-            android:hint="Notes"
+            android:hint="Tiêu Đề"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="normal" />
