@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("ntu_63131631.bai2_ghichu", appContext.getPackageName());
+        assertEquals("ntu_63131631.cau2_ghichu", appContext.getPackageName());
     }
 }
