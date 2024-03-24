@@ -64,6 +64,39 @@ public class frBMI extends JFrame {
 		txt_height.setBounds(196, 137, 272, 33);
 		contentPane.add(txt_height);
 		txt_height.setColumns(10);
+		txt_weight = new JTextField();
+		txt_weight.setFont(new Font("Tahoma", Font.PLAIN, 25));
+		txt_weight.setColumns(10);
+		txt_weight.setBounds(196, 195, 272, 33);
+		contentPane.add(txt_weight);
+		
+		txt_bmi = new JTextField();
+		txt_bmi.setHorizontalAlignment(SwingConstants.CENTER);
+		txt_bmi.setEnabled(false);
+		txt_bmi.setFont(new Font("Tahoma", Font.PLAIN, 25));
+		txt_bmi.setColumns(10);
+		txt_bmi.setBounds(328, 312, 140, 36);
+		contentPane.add(txt_bmi);
+		
+		JButton btn_tinh = new JButton("Tính");
+		btn_tinh.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				TinhBMi();
+			}
+		});
+		btn_tinh.setFont(new Font("Tahoma", Font.PLAIN, 25));
+		btn_tinh.setBounds(196, 240, 116, 43);
+		contentPane.add(btn_tinh);
+		
+		JButton btn_exit = new JButton("Thoát");
+		btn_exit.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+		btn_exit.setFont(new Font("Tahoma", Font.PLAIN, 25));
+		btn_exit.setBounds(352, 240, 116, 43);
+		contentPane.add(btn_exit);
 	}
 
 }
