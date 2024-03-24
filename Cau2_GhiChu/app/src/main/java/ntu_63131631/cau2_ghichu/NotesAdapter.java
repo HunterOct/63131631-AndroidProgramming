@@ -1,4 +1,4 @@
-package ntu_63131631.bai2_ghichu;
+package ntu_63131631.cau2_ghichu;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -7,10 +7,9 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import androidx.cardview.widget.CardView;
-
 import java.util.ArrayList;
-import java.util.Random;
+
+import ntu_63131631.bai2_ghichu.R;
 
 public class NotesAdapter extends ArrayAdapter<String> {
     public NotesAdapter(Context context, ArrayList<String> notes) {

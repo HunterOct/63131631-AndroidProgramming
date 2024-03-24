@@ -1,4 +1,4 @@
-package ntu_63131631.bai2_ghichu;
+package ntu_63131631.cau2_ghichu;
 
 import org.junit.Test;
 

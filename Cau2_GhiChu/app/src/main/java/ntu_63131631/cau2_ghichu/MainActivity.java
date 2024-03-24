@@ -1,19 +1,15 @@
-package ntu_63131631.bai2_ghichu;
+package ntu_63131631.cau2_ghichu;
 
 import android.content.DialogInterface;
-import android.icu.text.MessageFormat;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.EditText;
 import android.widget.ListView;
 
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton;
@@ -21,6 +17,8 @@ import com.google.android.material.textfield.TextInputEditText;
 
 import java.util.ArrayList;
 import java.util.Objects;
+
+import ntu_63131631.bai2_ghichu.R;
 
 public class MainActivity extends AppCompatActivity {
     ListView lv_Notes;
