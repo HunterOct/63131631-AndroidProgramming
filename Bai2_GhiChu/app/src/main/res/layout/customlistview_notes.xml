@@ -34,9 +34,9 @@
             android:paddingVertical="4dp"
             android:text=""
             android:hint="Notes"
-            android:background="#F1C40F"
+            android:background="@color/ORANGE"
             android:fontFamily="@font/nunito_semibold"
-            android:textColor="@color/black"
+            android:textColor="#000000"
             android:textSize="17sp"
             android:textStyle="normal"
             />

@@ -19,7 +19,7 @@ public class NotesAdapter extends ArrayAdapter<String> {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        int[] colors = {R.color.ORANGE, R.color.TURQUOISE, R.color.EMERALD, R.color.PETERRIVER, R.color.color5, R.color.color5, R.color.color5, R.color.color5, R.color.color5, R.color.color5, R.color.color5, R.color.color5}; // Thay đổi này thành các màu bạn muốn sử dụng
+
         // Lấy dữ liệu
         String note = getItem(position);
 
@@ -34,9 +34,6 @@ public class NotesAdapter extends ArrayAdapter<String> {
         // đưa dữ liệu vào textview
         tvNote.setText(note);
 
-        CardView cardView = (CardView) convertView.findViewById(R.id.notes_card_container);
-        int colorIndex = new Random().nextInt(colors.length); // Lấy một chỉ số ngẫu nhiên từ mảng màu
-        cardView.setCardBackgroundColor(getContext().getResources().getColor(colors[colorIndex])); // Đặt màu nền cho CardView
 
         return convertView;
     }
