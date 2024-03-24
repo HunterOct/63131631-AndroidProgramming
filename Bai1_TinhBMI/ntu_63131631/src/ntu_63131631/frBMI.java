@@ -106,8 +106,6 @@ public class frBMI extends JFrame {
 		contentPane.add(btn_exit);
 	}
 	void TinhBMi() {
-		double bmi,weight,height;
-		Scanner scanner = new Scanner(System.in);
 		float flbmi = Float.parseFloat(txt_bmi.getText());
 		float flweight = Float.parseFloat(txt_weight.getText());
 		float flheight = Float.parseFloat(txt_height.getText());
