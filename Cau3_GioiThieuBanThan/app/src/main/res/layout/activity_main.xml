@@ -7,6 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
 
@@ -15,17 +16,29 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
         android:enabled="false"
         android:fontFamily="@font/nunito_semibold"
         android:text="6313161"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
+    <View
+        android:id="@+id/view"
+        android:layout_width="50dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="9dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
         android:fontFamily="@font/nunito_extrabold"
         android:text="Lê Đoàn Hữu Tường"
         android:textAlignment="center"
@@ -36,31 +49,77 @@
         app:layout_constraintTop_toBottomOf="@+id/user_image" />
 
     <View
+        android:id="@+id/view2"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@android:color/black"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="379dp" />
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="20dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
 
     <TextView
+        android:id="@+id/textView3"
         android:layout_width="73dp"
         android:layout_height="48dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="17dp"
         android:fontFamily="@font/nunito_extrabold"
         android:gravity="center"
         android:text="10K"
         android:textSize="30dp"
-        tools:layout_editor_absoluteX="169dp"
-        tools:layout_editor_absoluteY="411dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
 
     <TextView
         android:id="@+id/fllower"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="66dp"
         android:fontFamily="@font/nunito_semibold"
         android:text="Người Theo Dõi"
         android:textSize="15dp"
-        tools:layout_editor_absoluteX="151dp"
-        tools:layout_editor_absoluteY="459dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="73dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="96dp"
+        android:fontFamily="@font/nunito_extrabold"
+        android:gravity="center"
+        android:text="79"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/following"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="65dp"
+        android:fontFamily="@font/nunito_semibold"
+        android:text="Đang Theo Dõi"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="20dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fllower" />
+
+
 
     <ImageView
         android:id="@+id/imageView"
@@ -82,6 +141,15 @@
         app:layout_constraintTop_toTopOf="parent"
         />
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="25dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="65dp"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/verify" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
