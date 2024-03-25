@@ -3,5 +3,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="persianRed">#4F518C</color>
+    <color name="Clouds">#ecf0f1</color>
+    <color name="red">#eb4d4b</color>
 
 </resources>
