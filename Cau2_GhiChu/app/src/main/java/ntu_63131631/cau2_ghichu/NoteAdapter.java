@@ -20,7 +20,7 @@ public class NoteAdapter extends ArrayAdapter<String> {
         // Lấy dữ liệu
         String note = getItem(position);
 
-        // kiểm tra xem view có được tái sử dụng không, nếu không thì inflate
+        // kiểm tra xem view có được sử dụng không, nếu không thì sử dụng giao diện customlistview_notes
         if (convertView == null) {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.customlistview_notes, parent, false);
         }

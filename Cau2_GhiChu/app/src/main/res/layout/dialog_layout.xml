@@ -30,7 +30,6 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:gravity="top"
-
             android:id="@+id/edit_text_notes"
             >
         </com.google.android.material.textfield.TextInputEditText>
