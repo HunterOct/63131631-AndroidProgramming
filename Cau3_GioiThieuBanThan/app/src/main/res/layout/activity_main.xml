@@ -53,10 +53,11 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="61dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="20dp"
         android:background="@android:color/darker_gray"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view" />
 
@@ -120,7 +121,6 @@
         app:layout_constraintTop_toBottomOf="@+id/fllower" />
 
 
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
@@ -151,5 +151,29 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:srcCompat="@drawable/verify" />
 
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="16dp"
+
+        android:text="+ Theo Dõi"
+        app:backgroundTint="@color/persianRed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="450dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="523dp"
+        >
+
+    </com.google.android.material.card.MaterialCardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
