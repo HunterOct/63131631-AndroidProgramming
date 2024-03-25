@@ -11,6 +11,17 @@
 
 
     <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:enabled="false"
+        android:fontFamily="@font/nunito_semibold"
+        android:text="6313161"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -24,28 +35,32 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/user_image" />
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="379dp" />
+
     <TextView
-        android:id="@+id/textView"
+        android:layout_width="73dp"
+        android:layout_height="48dp"
+        android:fontFamily="@font/nunito_extrabold"
+        android:gravity="center"
+        android:text="10K"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="169dp"
+        tools:layout_editor_absoluteY="411dp" />
+
+    <TextView
+        android:id="@+id/fllower"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:enabled="false"
         android:fontFamily="@font/nunito_semibold"
-        android:text="6313161"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="380dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="382dp"
-        app:cardCornerRadius="50dp"
-        app:cardElevation="60dp"
-        >
-
-    </androidx.cardview.widget.CardView>
+        android:text="Người Theo Dõi"
+        android:textSize="15dp"
+        tools:layout_editor_absoluteX="151dp"
+        tools:layout_editor_absoluteY="459dp" />
 
     <ImageView
         android:id="@+id/imageView"
