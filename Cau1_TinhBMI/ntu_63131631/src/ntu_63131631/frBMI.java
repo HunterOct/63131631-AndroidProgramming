@@ -107,6 +107,7 @@ public class frBMI extends JFrame {
 	    } else if (flbmi <= 29.9) {
 			hopthoai.showMessageDialog(this, "Bạn bị béo phì độ I");
 	    } else if (flbmi <= 34.9) {
+	    	
 			hopthoai.showMessageDialog(this, "Bạn bị béo phì độ II");
 	    } else {
 			hopthoai.showMessageDialog(this, "Bạn bị béo phì độ III");
