@@ -27,16 +27,17 @@ public class MainActivity extends AppCompatActivity {
         //6
         landScapeAdapter = new LandScapeAdapter(this, recyclerviewData);
         //7
+        recyclerViewLandScape.setAdapter(landScapeAdapter);
     }
     ArrayList<LandScape> getDataForRecyclerView(){
         ArrayList<LandScape> dsDulieu = new ArrayList<>();
-        LandScape landScape1 = new LandScape("16352112_v859-katie-19", "Ảnh 1");
+        LandScape landScape1 = new LandScape("image1", "Ảnh 1");
         dsDulieu.add(landScape1);
-        LandScape landScape2 = new LandScape("Notebook-bro", "Ảnh 2");
+        LandScape landScape2 = new LandScape("image2", "Ảnh 2");
         dsDulieu.add(landScape2);
-        LandScape landScape3 = new LandScape("Thiết kế chưa có tên (1)", "Ảnh 3");
+        LandScape landScape3 = new LandScape("image3", "Ảnh 3");
         dsDulieu.add(landScape3);
-        LandScape landScape4 = new LandScape("—Pngtree—flat design abstrak color soft_1912235", "Ảnh 4");
+        LandScape landScape4 = new LandScape("image4", "Ảnh 4");
         dsDulieu.add(landScape4);
         return dsDulieu;
     }
