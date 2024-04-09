@@ -38,11 +38,17 @@ public class LandScapeAdapter extends RecyclerView.Adapter<LandScapeAdapter.Item
         // TRích Thông tin
         String caption = landScapeHienThi.getLanCation();
         String tenAnh = landScapeHienThi.getLandImageName();
+        // Đặt vào trưởng thông tin của holder
+        holder.tvCaption.setText(caption);
+        // Đặt ảnh
+        String packageName = holder.itemView.getContext().getPackageName();
+        // Lấy ID ảnh thông qua tên
+        int imageID = holder.itemView.getResources().getIdentifier(tenAnh, "mimap", packageName);
+        holder.ivLandScape.setImageResource(imageID);
     }
-
     @Override
     public int getItemCount() {
-        return 0;
+        return lstData.size();
     }
 
     class ItemLandHolder extends RecyclerView.ViewHolder {
