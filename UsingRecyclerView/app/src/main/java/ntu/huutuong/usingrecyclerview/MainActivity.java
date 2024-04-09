@@ -27,9 +27,14 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     ArrayList<LandScape> getDataForRecyclerView(){
-        LandScape landScape1 = new LandScape("16352112_v859-katie-19", "Caption 1");
-        LandScape landScape2 = new LandScape("Notebook-bro", "Caption 1");
-        LandScape landScape3 = new LandScape("Thiết kế chưa có tên (1)", "Caption 1");
-        LandScape landScape4 = new LandScape("—Pngtree—flat design abstrak color soft_1912235", "Caption 1");
+        ArrayList<LandScape> dsDulieu = new ArrayList<>();
+        LandScape landScape1 = new LandScape("16352112_v859-katie-19", "Ảnh 1");
+        dsDulieu.add(landScape1);
+        LandScape landScape2 = new LandScape("Notebook-bro", "Ảnh 2");
+        dsDulieu.add(landScape2);
+        LandScape landScape3 = new LandScape("Thiết kế chưa có tên (1)", "Ảnh 3");
+        dsDulieu.add(landScape3);
+        LandScape landScape4 = new LandScape("—Pngtree—flat design abstrak color soft_1912235", "Ảnh 4");
+        dsDulieu.add(landScape4);
     }
 }
