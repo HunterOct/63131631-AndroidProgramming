@@ -4,9 +4,7 @@ import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
@@ -18,13 +16,17 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+        //3
+        recyclerviewData = getDataForRecyclerView();
+        //4
+        recyclerViewLandScape = findViewById(R.id.recyclerland);
+        //5
+        RecyclerView.LayoutManager layoutLinear = new LinearLayoutManager(this);
+        recyclerViewLandScape.setLayoutManager(layoutLinear);
+        //6
+        landScapeAdapter = new LandScapeAdapter(this, recyclerviewData);
+        //7
     }
     ArrayList<LandScape> getDataForRecyclerView(){
         ArrayList<LandScape> dsDulieu = new ArrayList<>();
@@ -36,5 +38,6 @@ public class MainActivity extends AppCompatActivity {
         dsDulieu.add(landScape3);
         LandScape landScape4 = new LandScape("—Pngtree—flat design abstrak color soft_1912235", "Ảnh 4");
         dsDulieu.add(landScape4);
+        return dsDulieu;
     }
 }
