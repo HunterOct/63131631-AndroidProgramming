@@ -26,5 +26,10 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
     }
-    ArrayList<LandScape> getRecyclerviewData
+    ArrayList<LandScape> getDataForRecyclerView(){
+        LandScape landScape1 = new LandScape("16352112_v859-katie-19", "Caption 1");
+        LandScape landScape2 = new LandScape("Notebook-bro", "Caption 1");
+        LandScape landScape3 = new LandScape("Thiết kế chưa có tên (1)", "Caption 1");
+        LandScape landScape4 = new LandScape("—Pngtree—flat design abstrak color soft_1912235", "Caption 1");
+    }
 }
