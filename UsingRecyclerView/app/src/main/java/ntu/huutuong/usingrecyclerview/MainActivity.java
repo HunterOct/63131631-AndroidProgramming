@@ -4,6 +4,7 @@ import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -22,8 +23,17 @@ public class MainActivity extends AppCompatActivity {
         //4
         recyclerViewLandScape = findViewById(R.id.recyclerland);
         //5
-        RecyclerView.LayoutManager layoutLinear = new LinearLayoutManager(this);
-        recyclerViewLandScape.setLayoutManager(layoutLinear);
+
+//        RecyclerView.LayoutManager layoutLinear = new LinearLayoutManager(this);
+//        recyclerViewLandScape.setLayoutManager(layoutLinear);
+
+//        RecyclerView.LayoutManager layoutLinearHorizonal = new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false);
+//        recyclerViewLandScape.setLayoutManager(layoutLinearHorizonal);
+
+        RecyclerView.LayoutManager layoutLinearGrid = new GridLayoutManager(this,2);
+        recyclerViewLandScape.setLayoutManager(layoutLinearGrid);
+
+
         //6
         landScapeAdapter = new LandScapeAdapter(this, recyclerviewData);
         //7
