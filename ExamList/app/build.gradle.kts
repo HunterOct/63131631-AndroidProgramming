@@ -33,6 +33,9 @@ android {
 
 dependencies {
     implementation("com.android.support:recyclerview-v7:25.0.0")
+    implementation("com.android.support:appcompat-v7:25.0.0")
+    implementation("com.android.support:design:23.0.1")
+    implementation("com.github.prolificinteractive:material-calendarview:2.0.1")
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
