@@ -23,10 +23,10 @@
         android:layout_width="20dp"
         android:layout_height="20dp"
         android:layout_below="@+id/examName"
-        android:tint="@color/xam"
         android:layout_marginStart="20dp"
         android:layout_marginTop="7dp"
-        app:srcCompat="@drawable/baseline_schedule_24"/>
+        app:srcCompat="@drawable/baseline_schedule_24"
+        app:tint="@color/xam" />
 
     <TextView
         android:id="@+id/examDate"
@@ -46,10 +46,10 @@
         android:layout_width="20dp"
         android:layout_height="20dp"
         android:layout_below="@+id/examDate"
-        android:tint="@color/xam"
         android:layout_marginStart="20dp"
         android:layout_marginTop="7dp"
-        app:srcCompat="@drawable/baseline_school_24"/>
+        app:srcCompat="@drawable/baseline_school_24"
+        app:tint="@color/xam" />
 
     <TextView
         android:id="@+id/examMessage"

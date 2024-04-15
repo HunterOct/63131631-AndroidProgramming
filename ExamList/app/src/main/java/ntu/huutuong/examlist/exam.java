@@ -1,28 +1,18 @@
 package ntu.huutuong.examlist;
 
-
-import android.content.Context;
-import android.content.Intent;
-import android.support.v7.app.ActionBarDrawerToggle;
+import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.view.LayoutInflater;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
 import com.google.android.material.navigation.NavigationView;
-import com.prolificinteractive
-        .materialcalendarview
-        .MaterialCalendarView;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class exam extends AppCompatActivity
@@ -37,11 +27,8 @@ public class exam extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_exam);
-        Toolbar toolbar
-                = (Toolbar)findViewById(R.id.toolbar);
-        toolbar.setTitle("");
-        setSupportActionBar(toolbar);
+        setContentView(R.layout.activity_main);
+
 
         List<examData> list = new ArrayList<>();
         list = getData();
@@ -52,7 +39,7 @@ public class exam extends AppCompatActivity
         listiner = new ClickListiner() {
             @Override
             public void click(int index){
-                Toast.makeTexT(this,"clicked item index is "+index,Toast.LENGTH_LONG).show();
+                Toast.makeText(exam.this, "Clicked on item " + index, Toast.LENGTH_SHORT).show();
             }
         };
         adapter
@@ -89,5 +76,10 @@ public class exam extends AppCompatActivity
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         return false;
+    }
+
+    @Override
+    public void onPointerCaptureChanged(boolean hasCapture) {
+        super.onPointerCaptureChanged(hasCapture);
     }
 }

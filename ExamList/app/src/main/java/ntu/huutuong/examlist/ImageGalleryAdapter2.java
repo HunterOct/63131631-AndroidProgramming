@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import java.util.Collections;
 import java.util.List;
 
-private class ImageGalleryAdapter2
+class ImageGalleryAdapter2
         extends RecyclerView.Adapter<examViewHolder> {
 
     List<examData> list
@@ -54,20 +54,12 @@ private class ImageGalleryAdapter2
     onBindViewHolder(final examViewHolder viewHolder,
                      final int position)
     {
-        final index = viewHolder.getAdapterPosition();
         viewHolder.examName
                 .setText(list.get(position).name);
         viewHolder.examDate
                 .setText(list.get(position).date);
         viewHolder.examMessage
                 .setText(list.get(position).message);
-        viewHolder.view.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view)
-            {
-                listiner.click(index);
-            }
-        });
     }
 
     @Override
@@ -85,4 +77,3 @@ private class ImageGalleryAdapter2
 
 
 }
-
