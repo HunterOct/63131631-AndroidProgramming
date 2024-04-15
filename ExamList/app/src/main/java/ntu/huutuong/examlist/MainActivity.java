@@ -41,16 +41,14 @@ public class MainActivity extends AppCompatActivity {
     }
     ArrayList<LandScape> getDataForRecyclerView(){
         ArrayList<LandScape> dsDulieu = new ArrayList<>();
-        LandScape landScape1 = new LandScape("image2", "Ảnh 1");
+        LandScape landScape1 = new LandScape("Kỳ Thi Đầu Tiên", "19/10/2003","Thi Tốt Nghiệp");
         dsDulieu.add(landScape1);
-        LandScape landScape2 = new LandScape("image2", "Ảnh 2");
+        LandScape landScape2 = new LandScape("Kỳ Thi Lần 2", "30/4/2024","Thi Tốt Nghiệp");
         dsDulieu.add(landScape2);
-        LandScape landScape3 = new LandScape("image2", "Ảnh 3");
+        LandScape landScape3 = new LandScape("Kỳ Thi Lần 3", "1/5/2024","Thi Tốt Nghiệp");
         dsDulieu.add(landScape3);
-        LandScape landScape4 = new LandScape("image2", "Ảnh 4");
+        LandScape landScape4 = new LandScape("Kỳ Thi Lần 4", "1/6/2024","Thi Tốt Nghiệp");
         dsDulieu.add(landScape4);
-
-
         return dsDulieu;
     }
 }

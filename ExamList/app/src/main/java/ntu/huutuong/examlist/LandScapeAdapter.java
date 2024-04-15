@@ -37,8 +37,8 @@ public class LandScapeAdapter extends RecyclerView.Adapter<LandScapeAdapter.Item
         LandScape landScapeHienThi = lstData.get(position);
         // TRích Thông tin
         String caption = landScapeHienThi.getLanCation();
-        String date = landScapeHienThi.getLanCation();
-        String message = landScapeHienThi.getLanCation();
+        String date = landScapeHienThi.getLanDate();
+        String message = landScapeHienThi.getLanmessage();
 
         // Đặt vào trưởng thông tin của holder
         holder.tvCaption.setText(caption);
