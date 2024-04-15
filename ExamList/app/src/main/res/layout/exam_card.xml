@@ -30,16 +30,16 @@
 
     <TextView
         android:id="@+id/examDate"
-        android:layout_toEndOf="@+id/examPic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/examName"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/examPic"
         android:gravity="center"
         android:text="15/04/2024"
-        android:textSize="16sp"/>
+        android:textSize="16sp" />
 
     <ImageView
         android:id="@+id/examPic2"
