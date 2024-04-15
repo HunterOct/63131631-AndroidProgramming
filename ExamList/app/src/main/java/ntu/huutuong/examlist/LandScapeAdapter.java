@@ -26,7 +26,7 @@ public class LandScapeAdapter extends RecyclerView.Adapter<LandScapeAdapter.Item
     @Override
     public ItemLandHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater cai_bom = LayoutInflater.from(context);
-        View viewItem = cai_bom.inflate(R.layout.item_land, parent, false);
+        View viewItem = cai_bom.inflate(R.layout.exam_card, parent, false);
         ItemLandHolder viewholderCreated = new ItemLandHolder(viewItem);
         return viewholderCreated;
     }
@@ -37,14 +37,15 @@ public class LandScapeAdapter extends RecyclerView.Adapter<LandScapeAdapter.Item
         LandScape landScapeHienThi = lstData.get(position);
         // TRích Thông tin
         String caption = landScapeHienThi.getLanCation();
-        String tenAnh = landScapeHienThi.getLandImageName();
+        String date = landScapeHienThi.getLanCation();
+        String message = landScapeHienThi.getLanCation();
+
         // Đặt vào trưởng thông tin của holder
         holder.tvCaption.setText(caption);
-        // Đặt ảnh
-        String packageName = holder.itemView.getContext().getPackageName();
-        // Lấy ID ảnh thông qua tên
-        int imageID = holder.itemView.getResources().getIdentifier(tenAnh, "mipmap", packageName);
-        holder.ivLandScape.setImageResource(imageID);
+        holder.tvDate.setText(date);
+        holder.tvMessage.setText(message);
+
+
     }
     @Override
     public int getItemCount() {
@@ -53,11 +54,14 @@ public class LandScapeAdapter extends RecyclerView.Adapter<LandScapeAdapter.Item
 
     class ItemLandHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         TextView tvCaption;
+        TextView tvDate;
+        TextView tvMessage;
         ImageView ivLandScape;
         public ItemLandHolder(@NonNull View itemView) {
             super(itemView);
-            tvCaption = itemView.findViewById(R.id.TextViewCation);
-            ivLandScape = itemView.findViewById(R.id.ImageViewland);
+            tvCaption = itemView.findViewById(R.id.examName);
+            tvDate = itemView.findViewById(R.id.examDate);
+            tvMessage = itemView.findViewById(R.id.examMessage);
             itemView.setOnClickListener(this); // Đăng ký OnClickListener cho itemView
 
         }
@@ -69,7 +73,7 @@ public class LandScapeAdapter extends RecyclerView.Adapter<LandScapeAdapter.Item
             LandScape phanTuDuocClick = lstData.get(viTriDuocClick);
             //bóc tách thông tin
             String ten = phanTuDuocClick.getLanCation();
-            String tenAnh = phanTuDuocClick.getLandImageName();
+
             //Toast tên
             String chuoiTB = "Bạn vừa click vào " + ten ;
             Toast.makeText(v.getContext(), chuoiTB, Toast.LENGTH_SHORT).show();

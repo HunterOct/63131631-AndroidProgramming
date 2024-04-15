@@ -1,16 +1,7 @@
 package ntu.huutuong.examlist;
 
 public class LandScape {
-    String landImageName;
     String lanCation;
-
-    public String getLandImageName() {
-        return landImageName;
-    }
-
-    public void setLandImageName(String landImageName) {
-        this.landImageName = landImageName;
-    }
 
     public String getLanCation() {
         return lanCation;
@@ -21,7 +12,6 @@ public class LandScape {
     }
 
     public LandScape(String landImageName, String lanCation) {
-        this.landImageName = landImageName;
         this.lanCation = lanCation;
     }
 }

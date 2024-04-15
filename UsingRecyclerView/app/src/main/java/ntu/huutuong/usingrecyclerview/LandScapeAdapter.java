@@ -37,7 +37,7 @@ public class LandScapeAdapter extends RecyclerView.Adapter<LandScapeAdapter.Item
         // Lấy Đối Tượng Hiển Thị
         LandScape landScapeHienThi = lstData.get(position);
         // TRích Thông tin
-        String caption = landScapeHienThi.getLanCation();
+            String caption = landScapeHienThi.getLanCation();
         String tenAnh = landScapeHienThi.getLandImageName();
         // Đặt vào trưởng thông tin của holder
         holder.tvCaption.setText(caption);
