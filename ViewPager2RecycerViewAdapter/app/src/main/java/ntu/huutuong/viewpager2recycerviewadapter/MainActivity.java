@@ -19,16 +19,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //3
-        recyclerviewData = getDataForRecyclerView();
+        recyclerviewData = getDataForViewPager();
         //4
-        recyclerViewLandScape = findViewById(R.id.viewpager2);
+        vỉewPager2Land = findViewById(R.id.viewpager2);
         //5
 
 //        RecyclerView.LayoutManager layoutLinear = new LinearLayoutManager(this);
 //        recyclerViewLandScape.setLayoutManager(layoutLinear);
 
         RecyclerView.LayoutManager layoutLinearHorizonal = new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false);
-        recyclerViewLandScape.setLayoutManager(layoutLinearHorizonal);
+        vỉewPager2Land.setLayoutManager(layoutLinearHorizonal);
 
 //        RecyclerView.LayoutManager layoutLinearGrid = new GridLayoutManager(this,2);
 //        recyclerViewLandScape.setLayoutManager(layoutLinearGrid);
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         //6
         landScapeAdapter = new LandScapeAdapter(this, recyclerviewData);
         //7
-        recyclerViewLandScape.setAdapter(landScapeAdapter);
+        vỉewPager2Land.setAdapter(landScapeAdapter);
     }
     ArrayList<LandScape> getDataForViewPager(){
         ArrayList<LandScape> dsDulieu = new ArrayList<>();
