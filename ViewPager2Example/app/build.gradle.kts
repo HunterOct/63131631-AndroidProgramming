@@ -34,6 +34,7 @@ android {
 dependencies {
 
     implementation(libs.appcompat)
+    implementation("androidx.viewpager2:viewpager2:1.1.0-alpha01")
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
