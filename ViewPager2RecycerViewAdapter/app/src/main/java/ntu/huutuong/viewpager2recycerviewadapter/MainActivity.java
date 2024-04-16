@@ -24,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
         recyclerviewData = getDataForViewPager();
         //4
         vỉewPager2Land = findViewById(R.id.viewpager2);
+        vỉewPager2Land.setPageTransformer(new ZoomOutPageTransformer());
+
         //6
         landScapeAdapter = new LandScapeAdapter(this, recyclerviewData);
         //7
