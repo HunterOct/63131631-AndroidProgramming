@@ -45,15 +45,15 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-//        TabLayout tabLayout = findViewById(R.id.tab_layout);
-//        TabLayoutMediator tabLayoutMediator = new TabLayoutMediator(
-//                tabLayout, viewPager, true, new TabLayoutMediator.TabConfigurationStrategy() {
-//            @Override
-//            public void onConfigureTab(@NonNull TabLayout.Tab tab, int position) {
-//                tab.setText("Tab " + (position + 1));
-//            }
-//        });
-//        tabLayoutMediator.attach();
+        TabLayout tabLayout = findViewById(R.id.tab_layout);
+        TabLayoutMediator tabLayoutMediator = new TabLayoutMediator(
+                tabLayout, viewPager, true, new TabLayoutMediator.TabConfigurationStrategy() {
+            @Override
+            public void onConfigureTab(@NonNull TabLayout.Tab tab, int position) {
+                tab.setText("Fragment " + (position + 1));
+            }
+        });
+        tabLayoutMediator.attach();
     }
 
 }
