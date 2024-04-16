@@ -25,6 +25,9 @@
 <img align="left" alt="GitHub" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
 <br />
 <h1></h1>
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=hunteroct&show_icons=true&locale=en&layout=compact" alt="hunteroct" /></p>
-
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=hunteroct&show_icons=true&locale=en" alt="hunteroct" /></p>
+<h3 align="left">ExamList</h3>
+ 
+<p align="center">
+<img src="https://github.com/HunterOct/63131631-AndroidProgramming/assets/86147376/3160c9dc-367f-46ae-b102-d29d7e305fc7" width="20%">
+</p>
+<br />
