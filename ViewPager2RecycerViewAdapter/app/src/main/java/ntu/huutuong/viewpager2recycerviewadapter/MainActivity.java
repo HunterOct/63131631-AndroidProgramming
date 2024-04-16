@@ -1,5 +1,7 @@
 package ntu.huutuong.viewpager2recycerviewadapter;
 
+import static android.icu.lang.UCharacter.GraphemeClusterBreak.V;
+
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,20 +26,36 @@ public class MainActivity extends AppCompatActivity {
         vỉewPager2Land = findViewById(R.id.viewpager2);
         //5
 
-//        RecyclerView.LayoutManager layoutLinear = new LinearLayoutManager(this);
-//        recyclerViewLandScape.setLayoutManager(layoutLinear);
-
-        RecyclerView.LayoutManager layoutLinearHorizonal = new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false);
-        vỉewPager2Land.setLayoutManager(layoutLinearHorizonal);
-
-//        RecyclerView.LayoutManager layoutLinearGrid = new GridLayoutManager(this,2);
-//        recyclerViewLandScape.setLayoutManager(layoutLinearGrid);
+////        RecyclerView.LayoutManager layoutLinear = new LinearLayoutManager(this);
+////        recyclerViewLandScape.setLayoutManager(layoutLinear);
+//
+//        RecyclerView.LayoutManager layoutLinearHorizonal = new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false);
+//        vỉewPager2Land.setLayoutManager(layoutLinearHorizonal);
+//
+////        RecyclerView.LayoutManager layoutLinearGrid = new GridLayoutManager(this,2);
+////        recyclerViewLandScape.setLayoutManager(layoutLinearGrid);
 
 
         //6
         landScapeAdapter = new LandScapeAdapter(this, recyclerviewData);
         //7
         vỉewPager2Land.setAdapter(landScapeAdapter);
+        vỉewPager2Land.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+                super.onPageScrolled(position, positionOffset, positionOffsetPixels);
+            }
+            @Override
+            public void onPageSelected(int position) {
+                super.onPageSelected(position);
+                LandScape landScape = recyclerviewData.get(position);
+                setTitle(landScape.getLanCation());
+            }
+            @Override
+            public void onPageScrollStateChanged(int state) {
+                super.onPageScrollStateChanged(state);
+            }
+        });
     }
     ArrayList<LandScape> getDataForViewPager(){
         ArrayList<LandScape> dsDulieu = new ArrayList<>();
