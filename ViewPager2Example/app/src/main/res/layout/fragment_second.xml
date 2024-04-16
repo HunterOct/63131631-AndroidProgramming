@@ -1,28 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:background="#FF0000"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
 
-    <LinearLayout
+    >
+
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#FF0000"
-        android:orientation="vertical">
+        android:background="@mipmap/frag2"
+        android:scaleType="fitXY">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="fragment 1"
-            android:textSize="30dp" />
-    </LinearLayout>
+    </ImageView>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="fragment 1"
-        android:textSize="30dp"
-        android:layout_gravity="center"
-        />
 </LinearLayout>
