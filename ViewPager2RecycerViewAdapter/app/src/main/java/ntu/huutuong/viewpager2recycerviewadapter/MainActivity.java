@@ -24,18 +24,6 @@ public class MainActivity extends AppCompatActivity {
         recyclerviewData = getDataForViewPager();
         //4
         vỉewPager2Land = findViewById(R.id.viewpager2);
-        //5
-
-////        RecyclerView.LayoutManager layoutLinear = new LinearLayoutManager(this);
-////        recyclerViewLandScape.setLayoutManager(layoutLinear);
-//
-//        RecyclerView.LayoutManager layoutLinearHorizonal = new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false);
-//        vỉewPager2Land.setLayoutManager(layoutLinearHorizonal);
-//
-////        RecyclerView.LayoutManager layoutLinearGrid = new GridLayoutManager(this,2);
-////        recyclerViewLandScape.setLayoutManager(layoutLinearGrid);
-
-
         //6
         landScapeAdapter = new LandScapeAdapter(this, recyclerviewData);
         //7
@@ -48,8 +36,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onPageSelected(int position) {
                 super.onPageSelected(position);
-                LandScape landScape = recyclerviewData.get(position);
-                setTitle(landScape.getLanCation());
+
             }
             @Override
             public void onPageScrollStateChanged(int state) {
