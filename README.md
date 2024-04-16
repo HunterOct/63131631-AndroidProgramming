@@ -10,11 +10,11 @@
 <br />
 <h3 align="left">ViewPager2RecycerViewAdapter</h3>
 <p align="center">
-<img src="https://github.com/HunterOct/Assets/blob/main/bandicam-2024-04-16-10-27-10-967.gif"width="20%" /></p>
+<img src="https://github.com/HunterOct/63131631-AndroidProgramming/blob/main/Assets/bandicam-2024-04-16-10-27-10-967.gif"width="20%" /></p>
 <br />
 
 <br />
 <h3 align="left">ViewPager2Example</h3>
 <p align="center">
-<img src="https://github.com/HunterOct/Assets/blob/main/fragment.gif" width="20%"/></p>
+<img src="https://github.com/HunterOct/63131631-AndroidProgramming/blob/main/Assets/fragment.gif" width="20%"/></p>
 <br />
