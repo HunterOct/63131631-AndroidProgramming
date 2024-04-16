@@ -4,7 +4,7 @@
 <table style="width:100%; text-align:center;">
   <tr>
     <th><h3>ExamList</h3></th>
-    <th><h3>ViewPager2RecycerViewAdapter</h3></th>
+    <th><h3>ViewPager2RecycerView</h3></th>
     <th><h3>ViewPager2Example</h3></th>
   </tr>
   <tr>
