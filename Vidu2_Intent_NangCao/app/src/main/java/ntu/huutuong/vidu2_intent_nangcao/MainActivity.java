@@ -3,6 +3,8 @@ package ntu.huutuong.vidu2_intent_nangcao;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -26,6 +28,24 @@ public class MainActivity extends AppCompatActivity {
     public void MoNhapLieu(View v){
         Intent iNhapLieu = new Intent(this,NhapLieuActivity.class);
         startActivityForResult(iNhapLieu, 8000);
-
+    }
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if(requestCode == 8000) {
+            if(resultCode == RESULT_OK) {
+                String hoTenNhanDuoc = data.getStringExtra("HT");
+                String namSinhNhanDuoc = data.getStringExtra("NS");
+                TextView tvHT = (TextView) findViewById(R.id.tvHoten);
+                TextView tvNs = (TextView) findViewById(R.id.tvNamSinh);
+                tvHT.setText(hoTenNhanDuoc);
+                tvNs.setText(namSinhNhanDuoc);
+                setTitle(hoTenNhanDuoc);
+            }
+            else {
+                Toast.makeText(this, "Trả Về Thất Bại", Toast.LENGTH_LONG).show();
+            }
+        }
+        else
+            super.onActivityResult(requestCode, resultCode, data);
     }
 }
