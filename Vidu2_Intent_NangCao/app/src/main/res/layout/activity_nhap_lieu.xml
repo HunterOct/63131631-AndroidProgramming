@@ -26,8 +26,8 @@
         android:id="@+id/tv"
         android:layout_width="170dp"
         android:layout_height="0dp"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="14dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
         android:fontFamily="@font/nunito_sans_extrabold"
         android:gravity="center"
         android:text="Nhập Năm Sinh:"
@@ -46,36 +46,6 @@
         android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textField"
-        android:layout_width="191dp"
-        android:layout_height="31dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="16dp"
-        android:hint=""
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textField2"
-        android:layout_width="191dp"
-        android:layout_height="31dp"
-        android:layout_marginTop="14dp"
-        android:layout_marginEnd="16dp"
-        android:hint=""
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textField">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/cancel_button"
@@ -99,7 +69,7 @@
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="170dp"
         android:layout_height="79dp"
-        android:layout_marginTop="103dp"
+        android:layout_marginTop="100dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="@color/red"
         android:fontFamily="@font/nunito_sans_extrabold"
@@ -107,7 +77,32 @@
         android:text="Xác Nhận"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textField2">
+        app:layout_constraintTop_toBottomOf="@+id/edtNamSinh">
 
     </com.google.android.material.button.MaterialButton>
+
+    <EditText
+        android:id="@+id/edtHoTen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/edtNamSinh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtHoTen" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
