@@ -13,7 +13,7 @@
         android:theme="@style/Theme.Vidu1_Intent_DonGian"
         tools:targetApi="31">
         <activity
-            android:name=".activity_Sub_One"
+            android:name=".ActivitySubOne"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

@@ -10,7 +10,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class activity_Sub_One extends AppCompatActivity {
+public class ActivitySubOne extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
