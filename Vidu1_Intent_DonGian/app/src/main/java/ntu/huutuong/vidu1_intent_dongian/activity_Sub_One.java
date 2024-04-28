@@ -10,7 +10,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class SubActivityOne extends AppCompatActivity {
+public class activity_Sub_One extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,8 +23,8 @@ public class SubActivityOne extends AppCompatActivity {
             return insets;
         });
     }
-    public void QuayLaiTrangChu(View vMainActivityiew) {
-        Intent quayVe = new Intent(SubActivityOne.this, SubActivityOne.class);
+    public void QuayLaiTrangChu(View v) {
+        Intent quayVe = new Intent(this, MainActivity.class);
         startActivity(quayVe);
     }
 }
