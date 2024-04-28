@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void MoNhapLieu(View v){
         Intent iNhapLieu = new Intent(this,NhapLieuActivity.class);
-        startActivity(iNhapLieu);
+        startActivityForResult(iNhapLieu, 8000);
+
     }
 }
