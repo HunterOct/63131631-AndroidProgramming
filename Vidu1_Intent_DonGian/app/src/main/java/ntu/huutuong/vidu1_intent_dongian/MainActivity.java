@@ -1,6 +1,8 @@
 package ntu.huutuong.vidu1_intent_dongian;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,4 +23,9 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
     }
+    public void chuyenManHinh(View vMainActivityiew) {
+        Intent ImanHinhKhac = new Intent(MainActivity.this, SubActivityOne.class);
+        startActivity(ImanHinhKhac);
+    }
 }
+
