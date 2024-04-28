@@ -7,13 +7,29 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="369dp"
+        android:layout_height="74dp"
+        android:fontFamily="@font/nunito_sans_extrabold"
+        android:gravity="center"
+        android:text="BẠN ĐANG Ở TRANG 1"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="163dp" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="231dp"
+        android:layout_height="94dp"
+        android:backgroundTint="@color/red"
+        android:fontFamily="@font/nunito_sans_extrabold"
+        android:onClick="QuayLaiTrangChu"
+        android:text="Quay Lại Trang Chủ"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="57dp">
+
+    </com.google.android.material.button.MaterialButton>
 </androidx.constraintlayout.widget.ConstraintLayout>
