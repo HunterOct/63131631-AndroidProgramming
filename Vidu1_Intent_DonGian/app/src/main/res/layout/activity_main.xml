@@ -17,4 +17,16 @@
         tools:layout_editor_absoluteX="78dp"
         tools:layout_editor_absoluteY="28dp" />
 
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="217dp"
+        android:backgroundTint="@color/black"
+        >
+
+    </com.google.android.material.button.MaterialButton>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
