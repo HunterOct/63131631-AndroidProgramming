@@ -34,12 +34,11 @@ public class MainActivity extends AppCompatActivity {
         if(requestCode == 8000) {
             if(resultCode == RESULT_OK) {
                 String hoTenNhanDuoc = data.getStringExtra("HT");
-                String namSinhNhanDuoc = data.getStringExtra("NS");
+                int namSinhNhanDuoc = data.getIntExtra("NS",200);
                 TextView tvHT = (TextView) findViewById(R.id.tvHoten);
                 TextView tvNs = (TextView) findViewById(R.id.tvNamSinh);
                 tvHT.setText(hoTenNhanDuoc);
-                tvNs.setText(namSinhNhanDuoc);
-                setTitle(hoTenNhanDuoc);
+                tvNs.setText(String.valueOf(namSinhNhanDuoc));
             }
             else {
                 Toast.makeText(this, "Trả Về Thất Bại", Toast.LENGTH_LONG).show();
