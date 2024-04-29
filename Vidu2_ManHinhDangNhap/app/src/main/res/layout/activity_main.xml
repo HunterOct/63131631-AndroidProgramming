@@ -7,28 +7,43 @@
     android:layout_height="match_parent"
     android:background="@color/green"
     tools:context=".MainActivity">
-    <include layout="@layout/toolbar" />
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="74dp"
         android:fontFamily="@font/nunito_extrabold"
         android:text="MÀN HÌNH CHÍNH"
         android:textColor="@color/black"
         android:textSize="30sp"
-        tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="131dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include2" />
 
     <com.google.android.material.button.MaterialButton
         android:layout_width="200dp"
         android:layout_height="100dp"
-        tools:layout_editor_absoluteX="105dp"
-        tools:layout_editor_absoluteY="217dp"
-        app:cornerRadius="30dp"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="106dp"
         android:backgroundTint="@color/red"
         android:fontFamily="@font/nunito_semibold"
         android:text="Đăng Nhập"
-        android:textSize="25sp">
+        android:textSize="25sp"
+        app:cornerRadius="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
 
     </com.google.android.material.button.MaterialButton>
 
