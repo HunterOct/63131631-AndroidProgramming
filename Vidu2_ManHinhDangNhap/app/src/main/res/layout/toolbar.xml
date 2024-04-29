@@ -4,18 +4,21 @@
     android:layout_height="wrap_content"
     android:background="@color/yellow"
     android:padding="15dp">
+
     <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_extrabold"
             android:text="K63.CNTT2 - NTU QUIZ"
-            >
+            android:textColor="@color/black"
+            android:textSize="20dp">
 
         </TextView>
     </RelativeLayout>
-
-
 
 </RelativeLayout>
