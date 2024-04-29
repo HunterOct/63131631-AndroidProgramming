@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/green"
     tools:context=".MainActivity">
+    <include layout="@layout/toolbar" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -20,5 +21,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.17000002" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="217dp"
+        app:cornerRadius="30dp"
+        android:backgroundTint="@color/red"
+        android:fontFamily="@font/nunito_semibold"
+        android:text="Đăng Nhập"
+        android:textSize="25sp">
+
+    </com.google.android.material.button.MaterialButton>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
