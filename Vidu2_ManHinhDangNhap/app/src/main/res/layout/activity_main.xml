@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/green"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <include
@@ -40,6 +41,7 @@
         android:fontFamily="@font/nunito_semibold"
         android:text="Đăng Nhập"
         android:textSize="25sp"
+        android:onClick="DangNhap"
         app:cornerRadius="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
