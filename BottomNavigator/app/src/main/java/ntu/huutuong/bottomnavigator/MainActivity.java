@@ -1,5 +1,6 @@
 package ntu.huutuong.bottomnavigator;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -8,8 +9,14 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
+import com.etebarian.meowbottomnavigation.MeowBottomNavigation;
 
+import kotlin.Suppress;
+
+public class MainActivity extends AppCompatActivity {
+    protected final int home = 1;
+    protected final int search = 2;
+    protected final int notification = 3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +26,31 @@ public class MainActivity extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+        });
+        @SuppressLint({"MissingInflateđId","LocalSuppress"})
+        MeowBottomNavigation bottomNavigation = findViewById(R.id.MeowbottomNavigation);
+        bottomNavigation.add(new MeowBottomNavigation.Model(home, R.drawable.ic_baseline_home_24));
+        bottomNavigation.add(new MeowBottomNavigation.Model(search, R.drawable.ic_baseline_search_24));
+        bottomNavigation.add(new MeowBottomNavigation.Model(notification, R.drawable.ic_baseline_notification_24));
+        bottomNavigation.setOnClickMenuListener(new MeowBottomNavigation.ClickListener() {
+            @Override
+            public void onClickItem(MeowBottomNavigation.Model item) {
+                // your codes
+            }
+        });
+
+        bottomNavigation.setOnShowListener(new MeowBottomNavigation.ShowListener() {
+            @Override
+            public void onShowItem(MeowBottomNavigation.Model item) {
+                // your codes
+            }
+        });
+
+        bottomNavigation.setOnReselectListener(new MeowBottomNavigation.ReselectListener() {
+            @Override
+            public void onReselectItem(MeowBottomNavigation.Model item) {
+                // your codes
+            }
         });
     }
 }
