@@ -40,6 +40,12 @@ public class MainActivity extends AppCompatActivity {
         String sqlInsertTable2 = "INSERT INTO Books VALUES(12, 'Machine Learning', 450, 29.99, 'Học máy cơ bản');";
         String sqlInsertTable3 = "INSERT INTO Books VALUES(13, 'Kinh tế học', 180, 12.50, 'Cơ bản về kinh tế');";
         String sqlInsertTable4 = "INSERT INTO Books VALUES(14, 'Lịch sử thế giới', 800, 45.75, 'Tóm tắt lịch sử');";
+        String sqlInsertTable5 = "INSERT INTO Books VALUES(15, 'Văn học Việt Nam', 600, 20.67, 'Tác phẩm văn học nổi tiếng');";
+        String sqlInsertTable6 = "INSERT INTO Books VALUES(16, 'Lập trình web', 750, 35.20, 'Xây dựng website từ cơ bản đến nâng cao');";
+        String sqlInsertTable7 = "INSERT INTO Books VALUES(17, 'Quản trị kinh doanh', 400, 65.88, 'Cẩm nang quản lý doanh nghiệp');";
+        String sqlInsertTable8 = "INSERT INTO Books VALUES(18, 'Ngôn ngữ học', 300, 22.45, 'Giới thiệu về ngôn ngữ học');";
+        String sqlInsertTable9 = "INSERT INTO Books VALUES(19, 'Trí tuệ nhân tạo', 280, 55.75, 'Giới thiệu về trí tuệ nhân tạo');";
+        String sqlInsertTable10 = "INSERT INTO Books VALUES(20, 'Hình học không gian', 150, 38.60, 'Bài giảng về hình học không gian');";
 
         db.execSQL(sqlInsertTable1);
         db.execSQL(sqlInsertTable2);
