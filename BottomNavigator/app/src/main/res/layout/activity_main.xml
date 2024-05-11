@@ -8,6 +8,7 @@
     tools:context=".MainActivity">
 
     <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+        android:id="@+id/MeowbottomNavigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:mbn_backgroundBottomColor="#ffffff"
