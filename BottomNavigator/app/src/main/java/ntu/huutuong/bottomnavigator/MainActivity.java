@@ -2,6 +2,7 @@ package ntu.huutuong.bottomnavigator;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -35,14 +36,28 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigation.setOnClickMenuListener(new MeowBottomNavigation.ClickListener() {
             @Override
             public void onClickItem(MeowBottomNavigation.Model item) {
-                // your codes
+                Toast.makeText(MainActivity.this, "Clicked item : " + item.getId(), Toast.LENGTH_SHORT).show();
             }
         });
 
         bottomNavigation.setOnShowListener(new MeowBottomNavigation.ShowListener() {
             @Override
             public void onShowItem(MeowBottomNavigation.Model item) {
-                // your codes
+                String name;
+                switch (item.getId()) {
+                    case home:
+                        name = "Home";
+                        break;
+                    case search:
+                        name = "Search";
+                        break;
+                    case notification:
+                        name = "Notification";
+                        break;
+                    default:
+                        throw new IllegalStateException("Unexpected value: " + item.getId());
+                }
+                bottomNavigation.setCount(home, "10");
             }
         });
 
