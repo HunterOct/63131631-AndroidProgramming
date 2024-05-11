@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.fragment.app.Fragment;
 
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation;
 
@@ -27,12 +28,16 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        @SuppressLint({"MissingInflateđId","LocalSuppress"})
         MeowBottomNavigation bottomNavigation = findViewById(R.id.MeowbottomNavigation);
+
         bottomNavigation.add(new MeowBottomNavigation.Model(search, R.drawable.ic_search_24));
         bottomNavigation.add(new MeowBottomNavigation.Model(home, R.drawable.ic_home_24));
         bottomNavigation.add(new MeowBottomNavigation.Model(notification, R.drawable.ic_notifycation_24));
+
+        // cài đặt hiển thị fragment hiện tại
+        //LoadFragment(new home_fragment());
         bottomNavigation.setOnClickMenuListener(new MeowBottomNavigation.ClickListener() {
+            // thay  đổi màu nền ,màu icon,...
             @Override
             public void onClickItem(MeowBottomNavigation.Model item) {
                 Toast.makeText(MainActivity.this, "Clicked item : " + item.getId(), Toast.LENGTH_SHORT).show();
@@ -42,21 +47,31 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigation.setOnShowListener(new MeowBottomNavigation.ShowListener() {
             @Override
             public void onShowItem(MeowBottomNavigation.Model item) {
-                String name;
-                switch (item.getId()) {
-
-                    case search:
-                        name = "Search";
-                        break;
-                        case home:
-                        name = "Home";
-                        break;
-                    case notification:
-                        name = "Notification";
-                        break;
-                    default:
-                        throw new IllegalStateException("Unexpected value: " + item.getId());
-                }
+//                String name;
+//                switch (item.getId()) {
+//
+//                    case search:
+//                        name = "Search";
+//                        break;
+//                    case home:
+//                        name = "Home";
+//                        break;
+//                    case notification:
+//                        name = "Notification";
+//                        break;
+//                    default:
+//                        throw new IllegalStateException("Unexpected value: " + item.getId());
+//                }
+                Fragment fragment = null;
+                if(item.getId() == 1)
+                    fragment = new search_fragment();
+                else if(item.getId() == 2)
+                    fragment = new home_fragment();
+                else if(item.getId() == 3)
+                    fragment = new notifycation_fragment();
+                else
+                    fragment = new home_fragment();
+                LoadFragment(fragment);
                 bottomNavigation.setCount(home, "10");
             }
         });
@@ -64,8 +79,14 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigation.setOnReselectListener(new MeowBottomNavigation.ReselectListener() {
             @Override
             public void onReselectItem(MeowBottomNavigation.Model item) {
-                // your codes
+
             }
         });
+    }
+
+    private void LoadFragment(Fragment fragment) {
+        getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.container, fragment,null).commit();
     }
 }
