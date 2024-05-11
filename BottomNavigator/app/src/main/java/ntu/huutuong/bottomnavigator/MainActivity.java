@@ -12,11 +12,10 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation;
 
-import kotlin.Suppress;
-
 public class MainActivity extends AppCompatActivity {
-    protected final int home = 1;
-    protected final int search = 2;
+
+    protected final int search = 1;
+    protected final int home = 2;
     protected final int notification = 3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,9 +29,9 @@ public class MainActivity extends AppCompatActivity {
         });
         @SuppressLint({"MissingInflateđId","LocalSuppress"})
         MeowBottomNavigation bottomNavigation = findViewById(R.id.MeowbottomNavigation);
-        bottomNavigation.add(new MeowBottomNavigation.Model(home, R.drawable.ic_baseline_home_24));
-        bottomNavigation.add(new MeowBottomNavigation.Model(search, R.drawable.ic_baseline_search_24));
-        bottomNavigation.add(new MeowBottomNavigation.Model(notification, R.drawable.ic_baseline_notification_24));
+        bottomNavigation.add(new MeowBottomNavigation.Model(search, R.drawable.ic_search_24));
+        bottomNavigation.add(new MeowBottomNavigation.Model(home, R.drawable.ic_home_24));
+        bottomNavigation.add(new MeowBottomNavigation.Model(notification, R.drawable.ic_notifycation_24));
         bottomNavigation.setOnClickMenuListener(new MeowBottomNavigation.ClickListener() {
             @Override
             public void onClickItem(MeowBottomNavigation.Model item) {
@@ -45,11 +44,12 @@ public class MainActivity extends AppCompatActivity {
             public void onShowItem(MeowBottomNavigation.Model item) {
                 String name;
                 switch (item.getId()) {
-                    case home:
-                        name = "Home";
-                        break;
+
                     case search:
                         name = "Search";
+                        break;
+                        case home:
+                        name = "Home";
                         break;
                     case notification:
                         name = "Notification";
