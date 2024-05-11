@@ -1,3 +1,8 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+}
 plugins {
     alias(libs.plugins.androidApplication)
 }
@@ -32,7 +37,7 @@ android {
 }
 
 dependencies {
-
+    implementation ("com.etebarian:meow-bottom-navigation:1.3.1")
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
