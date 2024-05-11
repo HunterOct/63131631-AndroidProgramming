@@ -15,7 +15,6 @@
         app:mbn_circleColor="#ffffff"
         app:mbn_countBackgroundColor="#ff6f00"
         app:mbn_countTextColor="#ffffff"
-        app:mbn_countTypeface="fonts/SourceSansPro-Regular.ttf"
         app:mbn_defaultIconColor="#90a4ae"
         app:mbn_rippleColor="#2f424242"
         app:mbn_selectedIconColor="#3c415e"
