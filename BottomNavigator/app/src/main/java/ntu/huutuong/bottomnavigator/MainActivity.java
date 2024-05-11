@@ -35,7 +35,8 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigation.add(new MeowBottomNavigation.Model(notification, R.drawable.ic_notifycation_24));
 
         // cài đặt hiển thị fragment hiện tại
-        //LoadFragment(new home_fragment());
+        LoadFragment(new home_fragment());
+
         bottomNavigation.setOnClickMenuListener(new MeowBottomNavigation.ClickListener() {
             // thay  đổi màu nền ,màu icon,...
             @Override
@@ -62,16 +63,23 @@ public class MainActivity extends AppCompatActivity {
 //                    default:
 //                        throw new IllegalStateException("Unexpected value: " + item.getId());
 //                }
-                Fragment fragment = null;
-                if(item.getId() == 1)
-                    fragment = new search_fragment();
-                else if(item.getId() == 2)
-                    fragment = new home_fragment();
-                else if(item.getId() == 3)
-                    fragment = new notifycation_fragment();
-                else
-                    fragment = new home_fragment();
-                LoadFragment(fragment);
+
+
+
+                switch (item.getId()) {
+                    case search:
+                        LoadFragment(new search_fragment());
+                        break;
+                    case home:
+                        LoadFragment(new home_fragment());
+                        break;
+                    case notification:
+                        LoadFragment(new notifycation_fragment());
+                        break;
+                    default:
+                        LoadFragment(new home_fragment());
+                        break;
+                }
                 bottomNavigation.setCount(home, "10");
             }
         });
@@ -82,11 +90,13 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+
     }
 
     private void LoadFragment(Fragment fragment) {
         getSupportFragmentManager()
                 .beginTransaction()
-                .replace(R.id.container, fragment,null).commit();
+                .replace(R.id.container, new home_fragment(),null).commit();
     }
 }
