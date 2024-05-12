@@ -42,22 +42,6 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigation.setOnShowListener(new MeowBottomNavigation.ShowListener() {
             @Override
             public void onShowItem(MeowBottomNavigation.Model item) {
-//                String name;
-//                switch (item.getId()) {
-//
-//                    case search:
-//                        name = "Search";
-//                        break;
-//                    case home:
-//                        name = "Home";
-//                        break;
-//                    case notification:
-//                        name = "Notification";
-//                        break;
-//                    default:
-//                        throw new IllegalStateException("Unexpected value: " + item.getId());
-//                }
-
 
 
                 switch (item.getId()) {
