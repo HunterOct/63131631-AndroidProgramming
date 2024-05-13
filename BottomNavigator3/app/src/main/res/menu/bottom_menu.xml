@@ -9,7 +9,7 @@
         android:icon="@drawable/ic_search"
         android:title="Tìm Kiếm"/>
     <item
-        android:id="@+id/nav_favorite"
+        android:id="@+id/nav_notify"
         android:icon="@drawable/ic_notify"
         android:title="Thông Báo"/>
     <item
