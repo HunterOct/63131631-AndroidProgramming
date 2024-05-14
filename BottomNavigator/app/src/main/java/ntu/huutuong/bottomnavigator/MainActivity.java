@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
 
         meowBottomNavigation = findViewById(R.id.nav_bottom);
 
-        //add item menu
         meowBottomNavigation.add(new MeowBottomNavigation.Model(1, R.drawable.ic_notify));
         meowBottomNavigation.add(new MeowBottomNavigation.Model(2, R.drawable.ic_home));
         meowBottomNavigation.add(new MeowBottomNavigation.Model(3, R.drawable.ic_search));
@@ -28,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onShowItem(MeowBottomNavigation.Model item) {
                 Fragment fragment = null;
-
                 switch (item.getId()){
                     case 1 :
                         fragment = new NotifyFragment();
@@ -43,21 +41,17 @@ public class MainActivity extends AppCompatActivity {
                         fragment = new ProfileFragment();
                         break;
                 }
-
                 loadFragment(fragment);
             }
         });
-
         //set nofication count
-        meowBottomNavigation.setCount(1, "10");
-
+//        meowBottomNavigation.setCount(1, "10");
         //set default
         meowBottomNavigation.show(2, true);
-
         meowBottomNavigation.setOnClickMenuListener(new MeowBottomNavigation.ClickListener() {
             @Override
             public void onClickItem(MeowBottomNavigation.Model item) {
-                Toast.makeText(getApplicationContext(), "You Clicked " + item.getId(), Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getApplicationContext(), "You Clicked " + item.getId(), Toast.LENGTH_SHORT).show();
             }
         });
     }

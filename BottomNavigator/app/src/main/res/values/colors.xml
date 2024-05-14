@@ -18,5 +18,7 @@
     <color name="ALIZARIN">#e74c3c</color>
     <color name="CLOUDS">#ecf0f1</color>
     <color name="CONCRETE">#95a5a6</color>
-
+    <color name="persianRed">#4F518C</color>
+    <color name="Clouds">#ecf0f1</color>
+    <color name="red">#eb4d4b</color>
 </resources>
