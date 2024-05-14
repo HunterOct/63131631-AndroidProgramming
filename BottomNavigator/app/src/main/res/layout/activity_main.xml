@@ -6,15 +6,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/container"
+    <FrameLayout
+        android:id="@+id/frame_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
     <com.etebarian.meowbottomnavigation.MeowBottomNavigation
-        android:id="@+id/MeowbottomNavigation"
+        android:id="@+id/nav_bottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:mbn_backgroundBottomColor="@color/CARROT"
         app:mbn_circleColor="#ffffff"
         app:mbn_countBackgroundColor="#ff6f00"
         app:mbn_countTextColor="#ffffff"
@@ -22,5 +21,6 @@
         app:mbn_rippleColor="#2f424242"
         app:mbn_selectedIconColor="#3c415e"
         android:layout_alignParentBottom="true"
+
         app:mbn_shadowColor="#1f212121" />
 </RelativeLayout>
