@@ -26,11 +26,16 @@
     </group>
     <item
         android:title="">
-
         <menu>
-
+            <item
+                android:id="@+id/nav_facebook"
+                android:icon="@drawable/ic_home"
+                android:title="Facebook"/>
+            <item
+                android:id="@+id/nav_github"
+                android:icon="@drawable/ic_home"
+                android:title="Github"/>
         </menu>
-
     </item>
 
 </menu>
