@@ -1,5 +1,8 @@
 <resources>
-    <string name="app_name">BottomNavigator</string>
-    <string name="open_nav">Mở Menu Caạnh Phải</string>
-    <string name="close_nav">Đóng Menu Caạnh Phải</string>
+    <!--    <string name="app_name">BottomNavigator</string>-->
+    <!--    <string name="open_nav">Mở Menu Caạnh Phải</string>-->
+    <!--    <string name="close_nav">Đóng Menu Caạnh Phải</string>-->
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

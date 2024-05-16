@@ -1,4 +1,4 @@
-package ntu.huutuong.bottomnavigator;
+package ntu.huutuong.drawenavigation2;
 
 import android.os.Bundle;
 
