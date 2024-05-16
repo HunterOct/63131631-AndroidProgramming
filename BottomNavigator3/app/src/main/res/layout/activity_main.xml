@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         app:itemIconSize="30dp"
-
+        android:fontFamily="@font/nunito_semibold"
         app:menu="@menu/bottom_menu"/>
     <FrameLayout
         android:id="@+id/frame_container"
