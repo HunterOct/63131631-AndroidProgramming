@@ -9,16 +9,21 @@
     <item
         android:id="@+id/nav_search"
         android:fontFamily="@font/nunito_semibold"
-        android:icon="@drawable/ic_search"
-        android:title="Tìm Kiếm"/>
+        android:icon="@drawable/ic_caculator"
+        android:title="Máy Tính"/>
     <item
         android:id="@+id/nav_notify"
         android:fontFamily="@font/nunito_semibold"
-        android:icon="@drawable/ic_notify"
-        android:title="Thông Báo"/>
+        android:icon="@drawable/ic_iist"
+        android:title="Danh Sách"/>
     <item
         android:id="@+id/nav_profile"
         android:fontFamily="@font/nunito_semibold"
         android:icon="@drawable/ic_profile"
         android:title="Trang Cá Nhân"/>
+    <item
+        android:id="@+id/nav_bmi"
+        android:fontFamily="@font/nunito_semibold"
+        android:icon="@drawable/ic_profile"
+        android:title="Tính BMI"/>
 </menu>

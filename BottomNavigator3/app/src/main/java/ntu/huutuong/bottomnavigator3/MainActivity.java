@@ -30,15 +30,16 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 Fragment selectedFragment = null;
                 int itemid = menuItem.getItemId();
-                if (itemid == R.id.nav_home) {
+                if (itemid == R.id.nav_home)
                     selectedFragment = new HomeFragment();
-                } else if (itemid == R.id.nav_search) {
+                else if (itemid == R.id.nav_search)
                     selectedFragment = new CaculatorFragment();
-                } else if (itemid == R.id.nav_notify) {
+                else if (itemid == R.id.nav_notify)
                     selectedFragment = new RecycerviewFragment();
-                } else if (itemid == R.id.nav_profile) {
+                else if (itemid == R.id.nav_profile)
                     selectedFragment = new ProfileFragment();
-                }
+                else if (itemid == R.id.nav_bmi)
+                    selectedFragment = new BMIFragment();
                 getSupportFragmentManager().beginTransaction().replace(R.id.frame_container, selectedFragment).commit();
                 return true;
             }

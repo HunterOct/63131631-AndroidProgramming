@@ -16,8 +16,7 @@ import com.google.android.material.textfield.TextInputEditText;
 public class CaculatorFragment extends Fragment {
     TextView StrKQ ,StrPhepTinh;
     Button Cong ,Tru,Nhan ,Chia;
-    TextInputEditText editTextA;
-    TextInputEditText editTextB;
+    TextInputEditText editTextA,editTextB;
 
     public CaculatorFragment() {
 
