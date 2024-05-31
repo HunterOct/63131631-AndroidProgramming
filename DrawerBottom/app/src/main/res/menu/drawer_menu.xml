@@ -6,11 +6,11 @@
             android:icon="@drawable/ic_home"
             android:title="Trang Chủ" />
         <item
-            android:id="@+id/drawer_dashboard"
+            android:id="@+id/drawer_list"
             android:icon="@drawable/ic_iist"
             android:title="Danh Sách" />
         <item
-            android:id="@+id/drawer_notifications"
+            android:id="@+id/drawer_profile"
             android:icon="@drawable/ic_profile"
             android:title="Trang Cá Nhân" />
         <item
@@ -21,5 +21,20 @@
             android:id="@+id/drawer_caculator"
             android:icon="@drawable/ic_caculator"
             android:title="Máy Tính" />
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:title="Liên Hệ">
+            <menu>
+                <item
+                    android:id="@+id/drawer_github"
+                    android:icon="@drawable/ic_github"
+                    android:title="Github" />
+                <item
+                    android:id="@+id/drawer_facebook"
+                    android:icon="@drawable/ic_facebook"
+                    android:title="Facebook" />
+            </menu>
+        </item>
     </group>
 </menu>
