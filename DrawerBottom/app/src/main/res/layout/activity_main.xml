@@ -14,9 +14,8 @@
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
+            android:fontFamily="@font/nunito_semibold"
             android:layout_height="?attr/actionBarSize"
-            app:navigationIcon="@drawable/ic_menu"
-            app:headerLayout="@layout/nav_header"
             android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
@@ -42,6 +41,8 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         app:itemIconSize="30dp"
+        android:background="@color/white"
         android:fontFamily="@font/nunito_semibold"
+        app:headerLayout="@layout/nav_header"
         app:menu="@menu/drawer_menu" />
 </androidx.drawerlayout.widget.DrawerLayout>
