@@ -35,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
 
-        // Set default fragment
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment, new HomeFragment()).commit();
         }
@@ -66,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
                 if (selectedFragment != null) {
                     getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment, selectedFragment).commit();
                 }
+                toolbar.setTitle(item.getTitle());
                 drawerLayout.closeDrawers();
                 return true;
             }
@@ -97,6 +97,7 @@ public class MainActivity extends AppCompatActivity {
                 if (selectedFragment != null) {
                     getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment, selectedFragment).commit();
                 }
+                toolbar.setTitle(item.getTitle());
                 return true;
             }
         });
