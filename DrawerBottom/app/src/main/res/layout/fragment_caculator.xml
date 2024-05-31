@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tieuDe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="18dp"
+        android:fontFamily="@font/nunito_extrabold"
+        android:gravity="center"
+        android:text="Máy Tính Đơn Giản"
+        android:textColor="@color/SUNFLOWER"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textA"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="243dp"
+        android:hint="Nhập Số A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tieuDe">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_text_A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_semibold"
+            android:inputType="number"
+            android:textSize="22dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textB"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="246dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="15dp"
+        android:hint="Nhập Số B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tieuDe">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_text_B"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_semibold"
+            android:inputType="number"
+            android:textSize="22dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="272dp"
+        android:fontFamily="@font/nunito_extrabold"
+        android:text="Kết Quả:"
+
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textA" />
+
+    <TextView
+        android:id="@+id/txKetQua"
+        android:layout_width="376dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/textview_border"
+        android:fontFamily="@font/nunito_extrabold"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/MIDNIGHTBLUE"
+        android:textSize="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/txPhepTinh"
+        android:layout_width="77dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="1dp"
+        android:fontFamily="@font/nunito_extrabold"
+        android:gravity="center"
+        android:textSize="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tieuDe" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCong"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="414dp"
+        android:layout_marginEnd="212dp"
+        android:layout_marginBottom="272dp"
+        android:fontFamily="@font/nunito_extrabold"
+        android:onClick="PhepTinhCong"
+        android:text="+"
+        android:textSize="100dp"
+        app:backgroundTint="#2662d1"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnTru"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="212dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="264dp"
+        android:fontFamily="@font/nunito_extrabold"
+        android:onClick="PhepTinhTru"
+        android:text="-"
+
+        android:textSize="100dp"
+        app:backgroundTint="#dc426d"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txKetQua" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnNhan"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="212dp"
+        android:layout_marginBottom="80dp"
+        android:fontFamily="@font/nunito_extrabold"
+        android:onClick="PhepTinhNhan"
+        android:text="x"
+        android:textSize="100dp"
+
+        app:backgroundTint="#03a1be"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCong" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnChia"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="212dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="80dp"
+        android:fontFamily="@font/nunito_extrabold"
+        android:onClick="PhepTinhChia"
+        android:text="/"
+        android:textSize="100dp"
+
+        app:backgroundTint="#ea7b22"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTru" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
