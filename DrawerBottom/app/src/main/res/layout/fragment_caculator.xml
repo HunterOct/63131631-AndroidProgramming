@@ -113,7 +113,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnCong"
-        android:layout_width="160dp"
+        android:layout_width="180dp"
         android:layout_height="160dp"
         android:layout_marginStart="18dp"
         android:layout_marginTop="40dp"
@@ -127,12 +127,14 @@
         app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txKetQua" />
+        app:layout_constraintTop_toBottomOf="@+id/txKetQua"
+        app:layout_constraintVertical_bias="0.494" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnTru"
-        android:layout_width="160dp"
+        android:layout_width="180dp"
         android:layout_height="160dp"
         android:layout_marginStart="212dp"
         android:layout_marginTop="40dp"
@@ -147,12 +149,14 @@
         app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txKetQua" />
+        app:layout_constraintTop_toBottomOf="@+id/txKetQua"
+        app:layout_constraintVertical_bias="0.494" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnNhan"
-        android:layout_width="160dp"
+        android:layout_width="180dp"
         android:layout_height="160dp"
         android:layout_marginStart="18dp"
         android:layout_marginTop="1dp"
@@ -167,12 +171,13 @@
         app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnCong" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnChia"
-        android:layout_width="160dp"
+        android:layout_width="180dp"
         android:layout_height="160dp"
         android:layout_marginStart="212dp"
         android:layout_marginTop="1dp"
@@ -187,6 +192,7 @@
         app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnTru" />
 

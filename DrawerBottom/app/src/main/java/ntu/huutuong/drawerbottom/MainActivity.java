@@ -55,6 +55,12 @@ public class MainActivity extends AppCompatActivity {
                 } else if (itemid == R.id.drawer_notifications) {
                     selectedFragment = new ProfileFragment();
                     bottomNavigationView.setSelectedItemId(R.id.navigation_notifications);
+                } else if (itemid == R.id.drawer_bmi) {
+                    selectedFragment = new BMIFragment();
+                    bottomNavigationView.setSelectedItemId(R.id.navigation_bmi);
+                } else if (itemid == R.id.drawer_caculator) {
+                    selectedFragment = new CaculatorFragment();
+                    bottomNavigationView.setSelectedItemId(R.id.navigation_caculator);
                 }
                 getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment, selectedFragment).commit();
                 if (selectedFragment != null) {
@@ -82,8 +88,10 @@ public class MainActivity extends AppCompatActivity {
                     navigationView.setCheckedItem(R.id.drawer_notifications);
                 } else if (itemid == R.id.navigation_bmi) {
                     selectedFragment = new BMIFragment();
+                    navigationView.setCheckedItem(R.id.drawer_bmi);
                 }   else if (itemid == R.id.navigation_caculator) {
                     selectedFragment = new CaculatorFragment();
+                    navigationView.setCheckedItem(R.id.drawer_caculator);
                 }
                 getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment, selectedFragment).commit();
                 if (selectedFragment != null) {
