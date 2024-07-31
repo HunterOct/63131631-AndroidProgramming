@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/cardView"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="4dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:gravity="center"
+            android:padding="10sp"
+            android:text="APK MOD BY HUNTER"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/editTextKey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập Key"
+            android:gravity="center"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background"
+            android:textColor="#000"
+            android:textSize="20sp" />
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonCheckKey"
+            android:text="Xác nhận"
+            android:textColor="#fff"
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:layout_marginTop="12dp"
+            app:backgroundTint="#040303"
+            app:cornerRadius="8dp"
+            app:rippleColor="#00000000"
+            app:strokeColor="#00000000"
+            app:strokeWidth="0dp"
+            />
+
+<!--        <Button-->
+<!--            android:id="@+id/buttonCheckKey"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Xác nhận"-->
+<!--            android:textColor="#fff"-->
+<!--            android:padding="12dp"-->
+<!--            android:textSize="18sp"-->
+<!--            android:layout_marginTop="12dp" />-->
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
