@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">UngDungBanHang</string>
+    <string name="gia_ban_25000">Giá bán: 25000</string>
+    <string name="ten_san_pham">Tên sản phẩm</string>
+    <string name="them_vao_gio_hang">THÊM VÀO GIỎ HÀNG</string>
+</resources>

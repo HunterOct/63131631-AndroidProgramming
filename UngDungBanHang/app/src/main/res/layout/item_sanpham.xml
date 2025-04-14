@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="8dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    app:cardCornerRadius="4dp"
+    android:layout_width="160dp"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/item_anhsp"
+                android:src="@drawable/baseline_cake_24"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"/>
+            <TextView
+                android:id="@+id/item_tensp"
+                android:text="Bánh kem"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:id="@+id/item_giasp"
+                android:text="giá: 100.000Đ"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#D90B0B"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+        <ImageView
+            android:src="@drawable/new_icon_h512"
+            android:layout_gravity="top|right"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>
