@@ -178,7 +178,9 @@ public class MainActivity extends AppCompatActivity {
         // khoi tao list
         mangLoaiSp = new ArrayList<>();
         mangSanPham = new ArrayList<>();
-
+        if(Utils.listGioHang == null){
+            Utils.listGioHang = new ArrayList<>();
+        }
     }
     private boolean isConnected(Context context){
         ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService(context.CONNECTIVITY_SERVICE);

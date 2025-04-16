@@ -3,4 +3,6 @@
     <string name="gia_ban_25000">Giá bán: 25000</string>
     <string name="ten_san_pham">Tên sản phẩm</string>
     <string name="them_vao_gio_hang">THÊM VÀO GIỎ HÀNG</string>
+    <string name="gio_hang_trong">Giỏ hàng trống</string>
+    <string name="tong_tien">Tổng Tiền:  </string>
 </resources>

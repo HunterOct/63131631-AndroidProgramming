@@ -29,6 +29,9 @@
             android:name=".activity.BanhKemActivity"
             android:exported="false" />
         <activity
+            android:name=".activity.GioHangActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.MainActivity"
             android:exported="true">
             <intent-filter>

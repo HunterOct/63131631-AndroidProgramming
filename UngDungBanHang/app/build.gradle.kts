@@ -41,7 +41,8 @@ dependencies {
     implementation (libs.retrofit)
     implementation (libs.converter.gson)
     implementation ("com.github.akarnokd:rxjava3-retrofit-adapter:3.0.0")
-
+    //bragde
+    implementation ("com.nex3z:notification-badge:1.0.4")
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
